@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanklesha Multi-Speciality Clinic | Kalyan West</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/AnujAhinave/mster-repo-/main/SAN.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        html { scroll-behavior: smooth; font-family: 'Plus Jakarta Sans', sans-serif; }
+        
+        .text-premium { color: #C5A059; }
+        .bg-premium { background-color: #C5A059; }
+        .border-premium { border-color: #C5A059; }
+        .gradient-text { 
+            background: linear-gradient(90deg, #C5A059, #8c6d31); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.75rem !important; line-height: 1.2 !important; }
+        }
+
+        .hover-lift { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-lift:hover { transform: translateY(-8px); }
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); }
+        
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C5A059'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1.2em;
+        }
+    </style>
+</head>
+<body class="bg-[#FCFBFA] text-slate-900 antialiased">
+
+<nav class="glass-nav sticky top-0 z-50 border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <img src="https://raw.githubusercontent.com/AnujAhinave/mster-repo-/main/SAN.png" alt="Shanklesha Logo" class="w-12 h-12 object-contain">
+            <span class="font-extrabold text-xl tracking-tighter uppercase text-slate-800">Shanklesha <span class="text-premium">Clinic</span></span>
+        </div>
+        <a href="#booking" class="hidden md:block bg-slate-900 text-white px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-premium transition-all duration-300">Book Now</a>
+    </div>
+</nav>
+
+<section id="home" class="relative pt-12 md:pt-24 pb-20 md:pb-32 overflow-hidden bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 border border-amber-100 mb-8">
+                <span class="flex h-2 w-2 rounded-full bg-premium animate-pulse"></span>
+                <span class="text-premium font-bold text-[10px] md:text-xs uppercase tracking-widest">Advanced Dental & Derma Care</span>
+            </div>
+            <h1 class="hero-title text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-8 text-slate-900">
+                Crafting Your <br><span class="gradient-text">Perfect Smile & Skin.</span>
+            </h1>
+            <p class="text-slate-500 text-lg mb-10 max-w-lg leading-relaxed">
+                Experience the gold standard in healthcare at Ahilyabai Chowk, Kalyan. From painless dentistry to aesthetic dermatology, we redefine your confidence.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                <a href="#booking" class="w-full sm:w-auto text-center bg-premium text-white px-10 py-5 rounded-2xl font-bold shadow-2xl shadow-amber-200/50 hover-lift text-sm uppercase tracking-widest text-white">Secure My Slot</a>
+                <div class="flex flex-col ml-0 sm:ml-6 mt-4 sm:mt-0">
+                    <div class="flex text-yellow-400 text-sm gap-1">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-widest mt-1">4.9/5 | 190+ Google Reviews</span>
+                </div>
+            </div>
+        </div>
+        <div class="order-1 lg:order-2 relative">
+            <div class="absolute -top-10 -right-10 w-72 h-72 bg-amber-100 rounded-full blur-3xl opacity-40"></div>
+            <div class="relative z-10 p-2 bg-white rounded-[3.5rem] shadow-2xl border border-slate-100">
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800" alt="Clinic Interior" class="w-full rounded-[3rem] object-cover aspect-[4/5] lg:aspect-auto">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 bg-slate-900 text-white rounded-[3rem] mx-4 md:mx-10 my-10 shadow-2xl">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-16 uppercase tracking-tight">Why Kalyan Trusts <span class="text-premium">Shanklesha</span></h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="group">
+                <div class="w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-premium text-2xl group-hover:bg-premium group-hover:text-white transition-all"><i class="fas fa-shield-virus"></i></div>
+                <h4 class="font-bold mb-3 text-lg text-white">Strict Sterilization</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">7-step sterilization protocol ensuring 100% safety and hygiene for every patient.</p>
+            </div>
+            <div class="group">
+                <div class="w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-premium text-2xl group-hover:bg-premium group-hover:text-white transition-all"><i class="fas fa-microscope"></i></div>
+                <h4 class="font-bold mb-3 text-lg text-white">Global Technology</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">Laser treatments and digital scanning for precise diagnosis and faster recovery.</p>
+            </div>
+            <div class="group">
+                <div class="w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-premium text-2xl group-hover:bg-premium group-hover:text-white transition-all"><i class="fas fa-heartbeat"></i></div>
+                <h4 class="font-bold mb-3 text-lg text-white">Patient Comfort</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">Zero-pain focus with sedation dentistry and relaxing skin therapy environments.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        <div>
+            <span class="text-premium font-bold text-xs uppercase tracking-widest px-3 py-1 bg-amber-50 rounded-lg">Clinical Excellence</span>
+            <h2 class="text-4xl font-extrabold mt-6 mb-6 text-slate-900">Expertise You Can Trust</h2>
+            <p class="text-slate-600 italic mb-8 border-l-4 border-premium pl-6 text-lg leading-relaxed">
+                "Our philosophy is simple: Comfort first. Every patient deserves care that looks natural and feels healthy without the stress of a typical clinic visit."
+            </p>
+            
+            <div class="space-y-4">
+                <div class="flex items-center gap-4 bg-slate-50 p-5 rounded-3xl border border-slate-100">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-premium text-xl"><i class="fas fa-user-md"></i></div>
+                    <div>
+                        <h5 class="font-bold text-slate-800">Multi-Specialist Team</h5>
+                        <p class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Kalyan's Leading Aesthetic Experts</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900 text-white p-8 rounded-[2rem] shadow-2xl relative overflow-hidden">
+                    <div class="flex text-yellow-400 text-xs mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-sm italic leading-relaxed relative z-10 text-white">"Can't differentiate between real tooth and cement. Thank you for such great service at affordable prices. The best in Kalyan West!"</p>
+                    <p class="mt-6 text-[10px] uppercase font-bold text-slate-500 tracking-widest">— Verified Patient Review</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="results" class="grid grid-cols-2 gap-4">
+            <div class="space-y-4">
+                <img src="https://n3.nameocean.net/esthedental/free_images/dental-before-after.webp" class="rounded-3xl shadow-xl border-4 border-white hover-lift w-full" alt="Result 1">
+                <img src="https://primo.dental/wp-content/uploads/2024/10/emax-before-after.jpg.webp" class="rounded-3xl shadow-xl border-4 border-white hover-lift w-full" alt="Result 2">
+            </div>
+            <div class="pt-12 space-y-4">
+                <img src="https://www.shutterstock.com/image-photo/arranging-dental-alignment-emax-zirconium-600nw-2488380191.jpg" class="rounded-3xl shadow-xl border-4 border-white hover-lift w-full" alt="Result 3">
+                <div class="bg-premium rounded-3xl p-8 text-white text-center shadow-xl shadow-amber-200">
+                    <p class="text-4xl font-black text-white">190+</p>
+                    <p class="text-[10px] font-bold uppercase tracking-widest mt-2 text-white">Successful Cases This Year</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="treatments" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-extrabold uppercase tracking-tight text-slate-900">How we can help you</h2>
+            <p class="text-slate-400 text-sm mt-4 uppercase font-bold tracking-widest">Premium care for everyone</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-premium transition group">
+                <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-premium text-2xl mb-6 group-hover:bg-premium group-hover:text-white transition-all"><i class="fas fa-tooth"></i></div>
+                <h3 class="text-xl font-bold mb-4 text-slate-800">Painless Dental</h3>
+                <p class="text-sm text-slate-500 leading-relaxed mb-8">From Single Sitting RCT to Laser Teeth Whitening and Zirconia Crowns. We save your smile with zero discomfort.</p>
+                <a href="#booking" class="text-premium font-bold text-xs uppercase tracking-widest flex items-center gap-2">Book Slot <i class="fas fa-arrow-right text-[10px]"></i></a>
+            </div>
+            <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-premium transition group">
+                <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-premium text-2xl mb-6 group-hover:bg-premium group-hover:text-white transition-all"><i class="fas fa-spa"></i></div>
+                <h3 class="text-xl font-bold mb-4 text-slate-800">Medical Skincare</h3>
+                <p class="text-sm text-slate-500 leading-relaxed mb-8">Medical-grade facials, chemical peels, acne-scar treatment, and anti-aging solutions for glass skin.</p>
+                <a href="#booking" class="text-premium font-bold text-xs uppercase tracking-widest flex items-center gap-2">Get Consultation <i class="fas fa-arrow-right text-[10px]"></i></a>
+            </div>
+            <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-premium transition group">
+                <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-premium text-2xl mb-6 group-hover:bg-premium group-hover:text-white transition-all"><i class="fas fa-user-tie"></i></div>
+                <h3 class="text-xl font-bold mb-4 text-slate-800">Hair Restoration</h3>
+                <p class="text-sm text-slate-500 leading-relaxed mb-8">Advanced Hair Fall control, GFC/PRP therapy, and scalp treatments designed to restore your natural density.</p>
+                <a href="#booking" class="text-premium font-bold text-xs uppercase tracking-widest flex items-center gap-2">Hair Analysis <i class="fas fa-arrow-right text-[10px]"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="booking" class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+            <h2 class="text-4xl md:text-5xl font-black uppercase italic leading-tight mb-8 text-slate-900">Don't Delay Your <span class="text-premium">Confidence.</span></h2>
+            <p class="text-slate-500 text-lg mb-10 font-medium">Get a clear diagnosis and personalized treatment plan at our flagship Kalyan West clinic.</p>
+            
+            <div class="flex flex-col gap-6">
+                <div class="flex items-center gap-5">
+                    <div class="w-12 h-12 bg-premium/10 rounded-full flex items-center justify-center text-premium"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Clinic Address</p>
+                        <p class="text-sm font-bold">6/7 Punyodaya Skylounge, Kalyan West</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <div class="w-12 h-12 bg-premium/10 rounded-full flex items-center justify-center text-premium"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Direct Line</p>
+                        <p class="text-sm font-bold">099878 65546</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-8 md:p-12 rounded-[3.5rem] shadow-[0_30px_60px_-15px_rgba(197,160,89,0.15)] border border-slate-100">
+            <div id="booking-form-wrapper">
+                <h3 class="text-2xl font-bold mb-8 uppercase text-center tracking-tight text-slate-800">Priority <span class="text-premium">Appointment</span></h3>
+                <form id="clinic-booking-form" class="space-y-4">
+                    <input type="text" name="firstName" placeholder="FULL NAME" required class="w-full bg-slate-50 border-slate-200 rounded-2xl px-6 py-4 text-xs font-bold uppercase tracking-widest focus:ring-2 focus:ring-premium outline-none transition-all">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <input type="tel" name="phone" placeholder="PHONE" required class="w-full bg-slate-50 border-slate-200 rounded-2xl px-6 py-4 text-xs font-bold uppercase outline-none focus:ring-2 focus:ring-premium transition-all">
+                        <select id="service-select" name="service" required class="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 text-xs font-bold uppercase">
+                            <option value="">TREATMENT</option>
+                            <option value="DENTAL">Dental Care</option>
+                            <option value="SKIN">Skin Aesthetics</option>
+                            <option value="HAIR">Hair Restoration</option>
+                        </select>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <select id="doctor-date" name="selected_date" disabled required class="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 text-xs font-bold uppercase">
+                            <option value="">CHOOSE DATE</option>
+                        </select>
+                        <select id="doctor-time" name="selected_time" disabled required class="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 text-xs font-bold uppercase">
+                            <option value="">SELECT TIME</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" id="submit-btn" class="w-full bg-slate-900 text-white font-black py-5 rounded-2xl hover:bg-premium transition-all duration-300 uppercase text-[10px] tracking-[0.3em] shadow-lg mt-4 text-white">
+                        Confirm My Slot
+                    </button>
+                </form>
+            </div>
+
+            <div id="thank-you-page" class="hidden text-center py-10 text-slate-800">
+                <div class="w-20 h-20 bg-premium rounded-full flex items-center justify-center text-white text-4xl mx-auto mb-6 shadow-xl">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h3 class="text-2xl font-black uppercase">Booking Sent</h3>
+                <p class="text-slate-400 mt-2 text-[10px] uppercase tracking-widest font-bold">We will WhatsApp you shortly.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-slate-900 text-white pt-24 pb-12 text-center rounded-t-[4rem]">
+    <div class="max-w-4xl mx-auto px-6">
+        <img src="https://raw.githubusercontent.com/AnujAhinave/mster-repo-/main/SAN.png" class="w-16 h-16 object-contain mx-auto mb-6">
+        <h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter text-white">Shanklesha <span class="text-premium">Clinic</span></h3>
+        <p class="text-slate-500 text-xs mb-10 uppercase tracking-[0.3em]">Excellence • Safety • Aesthetics</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 text-left border-y border-white/5 py-10">
+            <div class="text-center">
+                <p class="text-premium text-[10px] font-bold uppercase tracking-widest mb-2">Visit Us</p>
+                <p class="text-sm text-slate-300">Punyodaya Skylounge, Near Raja Hotel,<br>Ahilyabai Chowk, Kalyan West — 421301</p>
+            </div>
+            <div class="text-center">
+                <p class="text-premium text-[10px] font-bold uppercase tracking-widest mb-2">Hours</p>
+                <p class="text-sm text-slate-300">Mon–Sun: 11:00 AM — 09:00 PM</p>
+            </div>
+        </div>
+        
+        <p class="text-[9px] text-slate-600 font-bold uppercase tracking-[0.4em]">© 2026 Shanklesha Clinic | Designed for Excellence</p>
+    </div>
+</footer>
+
+<script>
+    const API_URL = "https://script.google.com/macros/s/AKfycby87Kh9jGLi3-2kctMIWhF1eGxLZHQAN0jIftq9SzrCysU5KuwKbMISs7VuWjvIvH9BTA/exec";
+
+    const serviceSelect = document.getElementById('service-select');
+    const dateSelect  = document.getElementById('doctor-date');
+    const timeSelect  = document.getElementById('doctor-time');
+    const bookingForm = document.getElementById('clinic-booking-form');
+    const submitBtn   = document.getElementById('submit-btn');
+
+    let allAvailableSlots = []; 
+
+    async function loadSchedule() {
+        try {
+            const response = await fetch(API_URL + "?fetch=true");
+            const data = await response.json();
+            allAvailableSlots = data.slots || [];
+        } catch (e) { console.error("API Error", e); }
+    }
+
+    serviceSelect.onchange = () => {
+        if (!serviceSelect.value) return;
+        dateSelect.innerHTML = '<option value="">LOADING...</option>';
+        const uniqueDates = [...new Set(allAvailableSlots.filter(s => s.status.toLowerCase() === 'available').map(s => s.date))];
+        if (uniqueDates.length > 0) {
+            dateSelect.innerHTML = '<option value="">CHOOSE DATE</option>';
+            uniqueDates.forEach(d => {
+                let opt = document.createElement('option'); opt.value = d; opt.textContent = d;
+                dateSelect.appendChild(opt);
+            });
+            dateSelect.disabled = false;
+        }
+    };
+
+    dateSelect.onchange = () => {
+        const selectedDate = dateSelect.value;
+        timeSelect.innerHTML = '<option value="">SELECT TIME</option>';
+        const slots = allAvailableSlots.filter(s => s.date === selectedDate);
+        if (slots.length > 0) {
+            slots.forEach(s => {
+                let opt = document.createElement('option');
+                opt.value = s.time; opt.textContent = s.time;
+                opt.disabled = s.status === 'booked';
+                timeSelect.appendChild(opt);
+            });
+            timeSelect.disabled = false;
+        }
+    };
+
+    bookingForm.onsubmit = async (e) => {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.textContent = "SENDING...";
+        const fd = new FormData(bookingForm);
+        const payload = {
+            action: "newBooking",
+            firstName: fd.get("firstName"),
+            phone: fd.get("phone"),
+            service: fd.get("service"),
+            date: fd.get("selected_date"),
+            time: fd.get("selected_time")
+        };
+        try {
+            await fetch(API_URL, { method: 'POST', mode: 'no-cors', body: JSON.stringify(payload) });
+            document.getElementById('booking-form-wrapper').classList.add('hidden');
+            document.getElementById('thank-you-page').classList.remove('hidden');
+        } catch (err) { alert("Sent! Check WhatsApp."); }
+    };
+
+    loadSchedule();
+</script>
+</body>
+</html>
