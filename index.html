@@ -3,334 +3,524 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shanklesha Multi-Speciality Clinic | Kalyan West</title>
-    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/AnujAhinave/mster-repo-/main/SAN.png">
+    <title>Kalyan Dental Clinic | Dr. Sabina - 22+ Years of Trusted Care</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
         html { scroll-behavior: smooth; font-family: 'Plus Jakarta Sans', sans-serif; }
         
-        .text-premium { color: #C5A059; }
-        .bg-premium { background-color: #C5A059; }
-        .border-premium { border-color: #C5A059; }
+        .text-premium { color: #1e40af; } 
+        .bg-premium { background-color: #1e40af; }
         .gradient-text { 
-            background: linear-gradient(90deg, #C5A059, #8c6d31); 
+            background: linear-gradient(90deg, #1e40af, #3b82f6); 
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent; 
         }
-
-        @media (max-width: 768px) {
-            .hero-title { font-size: 2.75rem !important; line-height: 1.2 !important; }
-        }
-
-        .hover-lift { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .hover-lift:hover { transform: translateY(-8px); }
-        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); }
+        .trust-card { background: white; border: 1px solid #e2e8f0; transition: all 0.3s ease; }
+        .trust-card:hover { border-color: #1e40af; transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
         
-        select {
-            appearance: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C5A059'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: right 1rem center;
-            background-size: 1.2em;
+        .hero-zoom {
+            object-position: center 15%;
+            transform: scale(1.2);
         }
+
+        @keyframes subtle-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-subtle { animation: subtle-bounce 3s infinite ease-in-out; }
     </style>
 </head>
-<body class="bg-[#FCFBFA] text-slate-900 antialiased">
+<body class="bg-[#FDFDFD] text-slate-900 antialiased">
 
-<nav class="glass-nav sticky top-0 z-50 border-b border-slate-100">
+<div class="bg-slate-900 text-white text-[10px] uppercase tracking-[0.2em] py-2 text-center font-bold">
+    <i class="fas fa-certificate text-blue-400 mr-2"></i> ISO 9001:2015 Certified Sterilization Standards
+</div>
+
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <div class="flex items-center gap-3">
-            <img src="https://raw.githubusercontent.com/AnujAhinave/mster-repo-/main/SAN.png" alt="Shanklesha Logo" class="w-12 h-12 object-contain">
-            <span class="font-extrabold text-xl tracking-tighter uppercase text-slate-800">Shanklesha <span class="text-premium">Clinic</span></span>
+            <div class="w-10 h-10 bg-premium rounded-lg flex items-center justify-center text-white shadow-lg shadow-blue-200">
+                <i class="fas fa-tooth"></i>
+            </div>
+            <div class="leading-tight">
+                <span class="font-extrabold text-xl tracking-tighter uppercase block">Kalyan <span class="text-premium">Dental</span></span>
+                <span class="text-[9px] font-bold text-slate-400 tracking-widest uppercase">Since 2004</span>
+            </div>
         </div>
-        <a href="#booking" class="hidden md:block bg-slate-900 text-white px-6 py-2.5 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-premium transition-all duration-300">Book Now</a>
+        <div class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-widest text-slate-600">
+            <a href="#doctor" class="hover:text-premium transition">Meet Dr. Sabina</a>
+            <a href="#results" class="hover:text-premium transition">Our Results</a>
+            <a href="#treatments" class="hover:text-premium transition">Services</a>
+            <a href="#reviews" class="hover:text-premium transition">Patient Stories</a>
+        </div>
+        <a href="tel:07208017597" class="bg-premium text-white px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-widest hover:scale-105 transition-all">Get appointment</a>
     </div>
 </nav>
 
-<section id="home" class="relative pt-12 md:pt-24 pb-20 md:pb-32 overflow-hidden bg-white">
-    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-        <div class="order-2 lg:order-1">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 border border-amber-100 mb-8">
-                <span class="flex h-2 w-2 rounded-full bg-premium animate-pulse"></span>
-                <span class="text-premium font-bold text-[10px] md:text-xs uppercase tracking-widest">Advanced Dental & Derma Care</span>
-            </div>
-            <h1 class="hero-title text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-8 text-slate-900">
-                Crafting Your <br><span class="gradient-text">Perfect Smile & Skin.</span>
-            </h1>
-            <p class="text-slate-500 text-lg mb-10 max-w-lg leading-relaxed">
-                Experience the gold standard in healthcare at Ahilyabai Chowk, Kalyan. From painless dentistry to aesthetic dermatology, we redefine your confidence.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-                <a href="#booking" class="w-full sm:w-auto text-center bg-premium text-white px-10 py-5 rounded-2xl font-bold shadow-2xl shadow-amber-200/50 hover-lift text-sm uppercase tracking-widest text-white">Secure My Slot</a>
-                <div class="flex flex-col ml-0 sm:ml-6 mt-4 sm:mt-0">
-                    <div class="flex text-yellow-400 text-sm gap-1">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-widest mt-1">4.9/5 | 190+ Google Reviews</span>
+<section id="doctor" class="pt-10 pb-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <div class="relative inline-block mb-10">
+            <div class="absolute -inset-4 bg-blue-100/50 rounded-[4rem] blur-2xl"></div>
+            <div class="relative z-10 overflow-hidden rounded-[4rem] border-[12px] border-white shadow-2xl mx-auto w-full max-w-[700px] bg-slate-50">
+                <img src="https://raw.githubusercontent.com/AnujAhinave/Klayan-denatil-clinic/main/IMG1.png" 
+                     alt="Dr. Sabina" 
+                     class="w-full h-[500px] md:h-[650px] object-cover hero-zoom">
+                
+                <div class="absolute top-8 right-8 bg-premium text-white px-6 py-4 rounded-3xl shadow-2xl border-4 border-white/30 backdrop-blur-md animate-subtle">
+                    <p class="text-3xl font-black leading-none">22</p>
+                    <p class="text-[10px] font-bold uppercase tracking-widest mt-1">Years of<br>Trust</p>
                 </div>
             </div>
         </div>
-        <div class="order-1 lg:order-2 relative">
-            <div class="absolute -top-10 -right-10 w-72 h-72 bg-amber-100 rounded-full blur-3xl opacity-40"></div>
-            <div class="relative z-10 p-2 bg-white rounded-[3.5rem] shadow-2xl border border-slate-100">
-                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800" alt="Clinic Interior" class="w-full rounded-[3rem] object-cover aspect-[4/5] lg:aspect-auto">
-            </div>
-        </div>
-    </div>
-</section>
 
-<section class="py-20 bg-slate-900 text-white rounded-[3rem] mx-4 md:mx-10 my-10 shadow-2xl">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-        <h2 class="text-2xl md:text-3xl font-bold mb-16 uppercase tracking-tight">Why Kalyan Trusts <span class="text-premium">Shanklesha</span></h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="group">
-                <div class="w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-premium text-2xl group-hover:bg-premium group-hover:text-white transition-all"><i class="fas fa-shield-virus"></i></div>
-                <h4 class="font-bold mb-3 text-lg text-white">Strict Sterilization</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">7-step sterilization protocol ensuring 100% safety and hygiene for every patient.</p>
-            </div>
-            <div class="group">
-                <div class="w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-premium text-2xl group-hover:bg-premium group-hover:text-white transition-all"><i class="fas fa-microscope"></i></div>
-                <h4 class="font-bold mb-3 text-lg text-white">Global Technology</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Laser treatments and digital scanning for precise diagnosis and faster recovery.</p>
-            </div>
-            <div class="group">
-                <div class="w-16 h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-premium text-2xl group-hover:bg-premium group-hover:text-white transition-all"><i class="fas fa-heartbeat"></i></div>
-                <h4 class="font-bold mb-3 text-lg text-white">Patient Comfort</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Zero-pain focus with sedation dentistry and relaxing skin therapy environments.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="about" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-        <div>
-            <span class="text-premium font-bold text-xs uppercase tracking-widest px-3 py-1 bg-amber-50 rounded-lg">Clinical Excellence</span>
-            <h2 class="text-4xl font-extrabold mt-6 mb-6 text-slate-900">Expertise You Can Trust</h2>
-            <p class="text-slate-600 italic mb-8 border-l-4 border-premium pl-6 text-lg leading-relaxed">
-                "Our philosophy is simple: Comfort first. Every patient deserves care that looks natural and feels healthy without the stress of a typical clinic visit."
-            </p>
+        <div class="max-w-3xl mx-auto">
+            <span class="text-premium font-bold text-xs uppercase tracking-[0.3em] px-4 py-2 bg-blue-50 rounded-full">Lead Dentist & Founder</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mt-8 mb-4 text-slate-900 leading-tight">Meet Dr. <span class="text-premium">Sabina</span></h1>
+            <p class="text-lg md:text-xl font-bold text-slate-500 uppercase tracking-widest mb-10">BDS | GDC Mumbai (Govt Dental Hospital)</p>
             
-            <div class="space-y-4">
-                <div class="flex items-center gap-4 bg-slate-50 p-5 rounded-3xl border border-slate-100">
-                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-premium text-xl"><i class="fas fa-user-md"></i></div>
-                    <div>
-                        <h5 class="font-bold text-slate-800">Multi-Specialist Team</h5>
-                        <p class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Kalyan's Leading Aesthetic Experts</p>
+            <div class="space-y-6 text-slate-600 leading-relaxed text-lg text-center px-4">
+                <p>
+                    With a legacy spanning over **22 years**, Dr. Sabina has become one of the most reputed dental experts in Kalyan. Having earned her BDS from the prestigious **Govt Dental College & Hospital (Mumbai)**, she combines high-level clinical precision with a gentle, patient-centric approach.
+                </p>
+                <p>
+                    Known for her mastery in **Wisdom Tooth Extractions** and **Painless Dentistry**, she has transformed the oral health of thousands of patients since establishing the clinic in 2004.
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-12">
+                <a href="#booking" class="bg-premium text-white px-10 py-5 rounded-2xl font-bold shadow-2xl shadow-blue-200 hover:bg-slate-900 transition-all text-sm uppercase tracking-widest">Book Your Consultation</a>
+                <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100 flex items-center gap-4">
+                    <div class="text-left">
+                        <div class="flex text-yellow-400 text-xs mb-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">333+ Google Reviews</p>
                     </div>
-                </div>
-                <div class="bg-slate-900 text-white p-8 rounded-[2rem] shadow-2xl relative overflow-hidden">
-                    <div class="flex text-yellow-400 text-xs mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="text-sm italic leading-relaxed relative z-10 text-white">"Can't differentiate between real tooth and cement. Thank you for such great service at affordable prices. The best in Kalyan West!"</p>
-                    <p class="mt-6 text-[10px] uppercase font-bold text-slate-500 tracking-widest">— Verified Patient Review</p>
-                </div>
-            </div>
-        </div>
-        
-        <div id="results" class="grid grid-cols-2 gap-4">
-            <div class="space-y-4">
-                <img src="https://n3.nameocean.net/esthedental/free_images/dental-before-after.webp" class="rounded-3xl shadow-xl border-4 border-white hover-lift w-full" alt="Result 1">
-                <img src="https://primo.dental/wp-content/uploads/2024/10/emax-before-after.jpg.webp" class="rounded-3xl shadow-xl border-4 border-white hover-lift w-full" alt="Result 2">
-            </div>
-            <div class="pt-12 space-y-4">
-                <img src="https://www.shutterstock.com/image-photo/arranging-dental-alignment-emax-zirconium-600nw-2488380191.jpg" class="rounded-3xl shadow-xl border-4 border-white hover-lift w-full" alt="Result 3">
-                <div class="bg-premium rounded-3xl p-8 text-white text-center shadow-xl shadow-amber-200">
-                    <p class="text-4xl font-black text-white">190+</p>
-                    <p class="text-[10px] font-bold uppercase tracking-widest mt-2 text-white">Successful Cases This Year</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="treatments" class="py-24 bg-slate-50">
+<section id="results" class="py-24 bg-slate-50 border-y border-slate-100">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-premium font-bold text-xs uppercase tracking-widest px-3 py-1 bg-blue-100 rounded-lg">Clinical Excellence</span>
+                <h2 class="text-4xl font-extrabold mt-6 mb-6 text-slate-900 uppercase leading-tight">Real Results, <br>Proven Expertise.</h2>
+                <p class="text-slate-600 italic mb-8 border-l-4 border-premium pl-6 text-lg leading-relaxed">
+                    "Our philosophy is simple: Comfort first. Every patient deserves care that looks natural and feels healthy without the stress of a typical clinic visit."
+                </p>
+                
+                <div class="bg-slate-900 text-white p-8 rounded-[2.5rem] shadow-2xl relative overflow-hidden">
+                    <div class="flex text-yellow-400 text-xs mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-sm italic leading-relaxed relative z-10 text-slate-300">"Can't differentiate between real tooth and cement. Thank you for such great service at affordable prices. The best in Kalyan West!"</p>
+                    <p class="mt-6 text-[10px] uppercase font-bold text-slate-500 tracking-widest">— Verified Review</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div class="space-y-4">
+                    <img src="https://n3.nameocean.net/esthedental/free_images/dental-before-after.webp" class="rounded-3xl shadow-xl border-4 border-white transition-all hover:scale-105 w-full" alt="Before After 1">
+                    <img src="https://primo.dental/wp-content/uploads/2024/10/emax-before-after.jpg.webp" class="rounded-3xl shadow-xl border-4 border-white transition-all hover:scale-105 w-full" alt="Before After 2">
+                </div>
+                <div class="pt-12 space-y-4">
+                    <img src="https://www.shutterstock.com/image-photo/arranging-dental-alignment-emax-zirconium-600nw-2488380191.jpg" class="rounded-3xl shadow-xl border-4 border-white transition-all hover:scale-105 w-full" alt="Result 3">
+                    <div class="bg-premium rounded-3xl p-8 text-white text-center shadow-xl shadow-blue-200">
+                        <p class="text-4xl font-black text-white">190+</p>
+                        <p class="text-[10px] font-bold uppercase tracking-widest mt-2 text-white leading-tight">Successful Cases <br>This Year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="treatments" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+        <span class="text-premium font-bold text-xs uppercase tracking-[0.3em]">Our Services</span>
+        <h2 class="text-4xl font-extrabold mt-4 text-slate-900 uppercase">Specialized Dental Solutions</h2>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+        <div class="trust-card p-10 rounded-[2.5rem]">
+            <div class="w-16 h-16 bg-blue-50 text-premium rounded-2xl flex items-center justify-center text-2xl mb-8"><i class="fas fa-syringe"></i></div>
+            <h3 class="text-xl font-bold mb-4">Painless Extractions</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">Specialized in Wisdom Teeth. We use advanced numbing techniques to ensure zero discomfort during the procedure.</p>
+        </div>
+        <div class="trust-card p-10 rounded-[2.5rem]">
+            <div class="w-16 h-16 bg-blue-50 text-premium rounded-2xl flex items-center justify-center text-2xl mb-8"><i class="fas fa-brush"></i></div>
+            <h3 class="text-xl font-bold mb-4">Cosmetic Dentistry</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">Smile makeovers, veneers, and invisible fillings designed to look and feel exactly like your natural enamel.</p>
+        </div>
+        <div class="trust-card p-10 rounded-[2.5rem]">
+            <div class="w-16 h-16 bg-blue-50 text-premium rounded-2xl flex items-center justify-center text-2xl mb-8"><i class="fas fa-shield-virus"></i></div>
+            <h3 class="text-xl font-bold mb-4">Root Canal Mastery</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">High-precision single-sitting Root Canal treatments with 99% success rates, focusing on saving your natural teeth.</p>
+        </div>
+    </div>
+</section>
+
+<section id="reviews" class="py-24 bg-slate-900 text-white rounded-[4rem] mx-4 md:mx-10 my-10 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px]"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-4 uppercase">Verified Patient Stories</h2>
+        <div class="flex justify-center text-yellow-400 gap-1 text-xl mb-4">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-slate-400 text-sm font-bold uppercase tracking-widest mb-16">333+ Google Reviews (5.0 Rating)</p>
+
+        <div class="grid md:grid-cols-3 gap-8 text-left">
+            <div class="bg-white/5 border border-white/10 p-8 rounded-3xl">
+                <p class="italic text-slate-300 mb-6 text-sm leading-relaxed">"Amazing service and super friendly staff! Dr. Sabina explained everything clearly. I did my wisdom teeth extraction here and felt no pain at all."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold text-xs">RK</div>
+                    <div><h5 class="font-bold text-sm">Rahul K.</h5><p class="text-[9px] uppercase text-blue-400 font-bold tracking-widest">Verified Patient</p></div>
+                </div>
+            </div>
+            <div class="bg-white/5 border border-white/10 p-8 rounded-3xl">
+                <p class="italic text-slate-300 mb-6 text-sm leading-relaxed">"I was terrified of dentists, but Dr. Sabina's way of treatment was awesome. Great experience, all facilities are modern and clean."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold text-xs">SP</div>
+                    <div><h5 class="font-bold text-sm">Sujata P.</h5><p class="text-[9px] uppercase text-blue-400 font-bold tracking-widest">Verified Patient</p></div>
+                </div>
+            </div>
+            <div class="bg-white/5 border border-white/10 p-8 rounded-3xl">
+                <p class="italic text-slate-300 mb-6 text-sm leading-relaxed">"Clean, professional and affordable. The cosmetic filling they did for me looks so natural. Highly recommend!"</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-bold text-xs">AJ</div>
+                    <div><h5 class="font-bold text-sm">Amit J.</h5><p class="text-[9px] uppercase text-blue-400 font-bold tracking-widest">Verified Patient</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="detailed-treatments" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+            <span class="text-premium font-bold text-xs uppercase tracking-[0.3em]">Patient Education</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold mt-4 text-slate-900 uppercase">Understand Your Treatment</h2>
+            <div class="w-24 h-1.5 bg-premium mx-auto mt-6 rounded-full"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+            <div class="group p-8 rounded-[3rem] bg-slate-50 border border-slate-100 hover:bg-blue-900 hover:text-white transition-all duration-500">
+                <div class="flex items-start gap-6">
+                    <div class="w-16 h-16 bg-white text-premium rounded-2xl flex items-center justify-center text-2xl shadow-sm group-hover:bg-premium group-hover:text-white transition-all">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Root Canal Treatment (RCT)</h3>
+                        <p class="text-slate-500 group-hover:text-blue-100 leading-relaxed mb-6">
+                            We specialize in **Single-Sitting RCT**. Using digital apex locators and rotary endodontics, Dr. Sabina removes infected pulp with microscopic precision, saving your natural tooth from extraction in just 45-60 minutes.
+                        </p>
+                        <ul class="space-y-3 text-sm font-bold opacity-80 uppercase tracking-widest">
+                            <li><i class="fas fa-check-circle mr-2 text-premium group-hover:text-white"></i> Pain-Free Local Anesthesia</li>
+                            <li><i class="fas fa-check-circle mr-2 text-premium group-hover:text-white"></i> High-Strength Zirconia Crowns</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group p-8 rounded-[3rem] bg-slate-50 border border-slate-100 hover:bg-blue-900 hover:text-white transition-all duration-500">
+                <div class="flex items-start gap-6">
+                    <div class="w-16 h-16 bg-white text-premium rounded-2xl flex items-center justify-center text-2xl shadow-sm group-hover:bg-premium group-hover:text-white transition-all">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Wisdom Tooth Surgery</h3>
+                        <p class="text-slate-500 group-hover:text-blue-100 leading-relaxed mb-6">
+                            Impacted wisdom teeth can cause severe pain and shifting. Our **Atraumatic Extraction** technique ensures minimal tissue trauma, leading to faster healing and virtually no post-operative swelling.
+                        </p>
+                        <ul class="space-y-3 text-sm font-bold opacity-80 uppercase tracking-widest">
+                            <li><i class="fas fa-check-circle mr-2 text-premium group-hover:text-white"></i> Sutures for Faster Healing</li>
+                            <li><i class="fas fa-check-circle mr-2 text-premium group-hover:text-white"></i> Post-Op Care Kit Provided</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group p-8 rounded-[3rem] bg-slate-50 border border-slate-100 hover:bg-blue-900 hover:text-white transition-all duration-500">
+                <div class="flex items-start gap-6">
+                    <div class="w-16 h-16 bg-white text-premium rounded-2xl flex items-center justify-center text-2xl shadow-sm group-hover:bg-premium group-hover:text-white transition-all">
+                        <i class="fas fa-sparkles"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Ultrasonic Scaling</h3>
+                        <p class="text-slate-500 group-hover:text-blue-100 leading-relaxed mb-6">
+                            Beyond regular brushing, ultrasonic scaling removes tartar and plaque that cause gum disease. We finish with a **Professional Polishing** to restore the natural shine of your enamel.
+                        </p>
+                        <ul class="space-y-3 text-sm font-bold opacity-80 uppercase tracking-widest">
+                            <li><i class="fas fa-check-circle mr-2 text-premium group-hover:text-white"></i> Gum Health Assessment</li>
+                            <li><i class="fas fa-check-circle mr-2 text-premium group-hover:text-white"></i> Stain Removal Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group p-8 rounded-[3rem] bg-slate-50 border border-slate-100 hover:bg-blue-900 hover:text-white transition-all duration-500">
+                <div class="flex items-start gap-6">
+                    <div class="w-16 h-16 bg-white text-premium rounded-2xl flex items-center justify-center text-2xl shadow-sm group-hover:bg-premium group-hover:text-white transition-all">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Invisible Aligners</h3>
+                        <p class="text-slate-500 group-hover:text-blue-100 leading-relaxed mb-6">
+                            Straighten your teeth without the "metal look." We offer clear aligners that are comfortable, removable, and nearly invisible, allowing you to smile confidently throughout your treatment.
+                        </p>
+                        <ul class="space-y-3 text-sm font-bold opacity-80 uppercase tracking-widest">
+                            <li><i class="fas fa-check-circle mr-2 text-premium group-hover:text-white"></i> 3D Digital Simulation</li>
+                            <li><i class="fas fa-check-circle mr-2 text-premium group-hover:text-white"></i> Custom Fit Comfort</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-extrabold mb-8 uppercase leading-tight">Your 4-Step <br><span class="text-premium">Smile Transformation</span></h2>
+                <div class="space-y-12">
+                    <div class="flex gap-6">
+                        <div class="w-10 h-10 rounded-full bg-premium flex items-center justify-center font-bold shrink-0">1</div>
+                        <div>
+                            <h5 class="font-bold text-lg uppercase tracking-tight mb-2">Digital Diagnosis</h5>
+                            <p class="text-slate-400 text-sm">We use low-radiation digital X-rays to get a 100% accurate view of your oral health instantly.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-10 h-10 rounded-full bg-premium flex items-center justify-center font-bold shrink-0">2</div>
+                        <div>
+                            <h5 class="font-bold text-lg uppercase tracking-tight mb-2">Transparent Planning</h5>
+                            <p class="text-slate-400 text-sm">Dr. Sabina explains the 'Why' and 'How' of your treatment, including all costs and timelines upfront.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-10 h-10 rounded-full bg-premium flex items-center justify-center font-bold shrink-0">3</div>
+                        <div>
+                            <h5 class="font-bold text-lg uppercase tracking-tight mb-2">Painless Procedure</h5>
+                            <p class="text-slate-400 text-sm">Experience dentistry in a relaxed environment with premium anesthetics and gentle handling.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-10 h-10 rounded-full bg-premium flex items-center justify-center font-bold shrink-0">4</div>
+                        <div>
+                            <h5 class="font-bold text-lg uppercase tracking-tight mb-2">Long-term Support</h5>
+                            <p class="text-slate-400 text-sm">We don't just fix and forget. Every treatment comes with a post-op follow-up and hygiene maintenance plan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/5 border border-white/10 p-12 rounded-[4rem] text-center">
+                <i class="fas fa-quote-left text-premium text-4xl mb-8"></i>
+                <p class="text-2xl font-medium leading-relaxed italic mb-8 text-slate-200">
+                    "After 22 years of practice, my greatest reward is seeing a patient walk in with pain and walk out with a confident, healthy smile."
+                </p>
+                <p class="font-bold text-premium uppercase tracking-[0.3em]">— Dr. Sabina</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="pricing" class="py-24 bg-slate-50">
     <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-extrabold uppercase tracking-tight text-slate-900">How we can help you</h2>
-            <p class="text-slate-400 text-sm mt-4 uppercase font-bold tracking-widest">Premium care for everyone</p>
+            <span class="text-premium font-bold text-xs uppercase tracking-[0.3em]">Transparent Pricing</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold mt-4 text-slate-900 uppercase">Treatment & Services</h2>
+            <p class="text-slate-500 mt-4 max-w-2xl mx-auto">We believe in honest healthcare. Here is a guide to our starting prices for common procedures.</p>
         </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-premium transition group">
-                <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-premium text-2xl mb-6 group-hover:bg-premium group-hover:text-white transition-all"><i class="fas fa-tooth"></i></div>
-                <h3 class="text-xl font-bold mb-4 text-slate-800">Painless Dental</h3>
-                <p class="text-sm text-slate-500 leading-relaxed mb-8">From Single Sitting RCT to Laser Teeth Whitening and Zirconia Crowns. We save your smile with zero discomfort.</p>
-                <a href="#booking" class="text-premium font-bold text-xs uppercase tracking-widest flex items-center gap-2">Book Slot <i class="fas fa-arrow-right text-[10px]"></i></a>
-            </div>
-            <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-premium transition group">
-                <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-premium text-2xl mb-6 group-hover:bg-premium group-hover:text-white transition-all"><i class="fas fa-spa"></i></div>
-                <h3 class="text-xl font-bold mb-4 text-slate-800">Medical Skincare</h3>
-                <p class="text-sm text-slate-500 leading-relaxed mb-8">Medical-grade facials, chemical peels, acne-scar treatment, and anti-aging solutions for glass skin.</p>
-                <a href="#booking" class="text-premium font-bold text-xs uppercase tracking-widest flex items-center gap-2">Get Consultation <i class="fas fa-arrow-right text-[10px]"></i></a>
-            </div>
-            <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-premium transition group">
-                <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-premium text-2xl mb-6 group-hover:bg-premium group-hover:text-white transition-all"><i class="fas fa-user-tie"></i></div>
-                <h3 class="text-xl font-bold mb-4 text-slate-800">Hair Restoration</h3>
-                <p class="text-sm text-slate-500 leading-relaxed mb-8">Advanced Hair Fall control, GFC/PRP therapy, and scalp treatments designed to restore your natural density.</p>
-                <a href="#booking" class="text-premium font-bold text-xs uppercase tracking-widest flex items-center gap-2">Hair Analysis <i class="fas fa-arrow-right text-[10px]"></i></a>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="booking" class="py-24 bg-white">
-    <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-        <div>
-            <h2 class="text-4xl md:text-5xl font-black uppercase italic leading-tight mb-8 text-slate-900">Don't Delay Your <span class="text-premium">Confidence.</span></h2>
-            <p class="text-slate-500 text-lg mb-10 font-medium">Get a clear diagnosis and personalized treatment plan at our flagship Kalyan West clinic.</p>
+        <div class="grid lg:grid-cols-3 gap-8 items-start">
             
-            <div class="flex flex-col gap-6">
-                <div class="flex items-center gap-5">
-                    <div class="w-12 h-12 bg-premium/10 rounded-full flex items-center justify-center text-premium"><i class="fas fa-map-marker-alt"></i></div>
-                    <div>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Clinic Address</p>
-                        <p class="text-sm font-bold">6/7 Punyodaya Skylounge, Kalyan West</p>
+            <div class="lg:col-span-1 bg-premium text-white p-10 rounded-[3rem] shadow-2xl shadow-blue-200 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150"></div>
+                <h3 class="text-2xl font-bold mb-6 uppercase tracking-tight">Consultation Fee</h3>
+                <div class="flex items-baseline gap-2 mb-6">
+                    <span class="text-5xl font-black">₹300</span>
+                    <span class="text-blue-200 text-sm uppercase font-bold tracking-widest">/ Visit</span>
+                </div>
+                <ul class="space-y-4 mb-10 opacity-90 text-sm font-medium">
+                    <li><i class="fas fa-check-circle mr-2"></i> Comprehensive Oral Exam</li>
+                    <li><i class="fas fa-check-circle mr-2"></i> Digital Intra-oral Scan</li>
+                    <li><i class="fas fa-check-circle mr-2"></i> Personalized Treatment Plan</li>
+                    <li><i class="fas fa-check-circle mr-2"></i> Cost & Timeline Estimation</li>
+                </ul>
+                <a href="#booking" class="block w-full py-4 bg-white text-premium text-center rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-slate-900 hover:text-white transition-all">Book Now</a>
+            </div>
+
+            <div class="lg:col-span-2 grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm">
+                    <h4 class="text-premium font-black text-xs uppercase tracking-widest mb-6 border-b border-slate-50 pb-4">General Dentistry</h4>
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-700 font-bold">Scaling & Polishing</span>
+                            <span class="text-slate-400 font-bold text-sm">from ₹800</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-700 font-bold">Composite Filling</span>
+                            <span class="text-slate-400 font-bold text-sm">from ₹1,000</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-700 font-bold">Simple Extraction</span>
+                            <span class="text-slate-400 font-bold text-sm">from ₹1,200</span>
+                        </div>
+                        <div class="flex justify-between items-center text-premium">
+                            <span class="font-bold italic">Digital X-Ray</span>
+                            <span class="font-bold text-sm">₹200</span>
+                        </div>
                     </div>
                 </div>
-                <div class="flex items-center gap-5">
-                    <div class="w-12 h-12 bg-premium/10 rounded-full flex items-center justify-center text-premium"><i class="fas fa-phone-alt"></i></div>
-                    <div>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Direct Line</p>
-                        <p class="text-sm font-bold">099878 65546</p>
+
+                <div class="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm">
+                    <h4 class="text-premium font-black text-xs uppercase tracking-widest mb-6 border-b border-slate-50 pb-4">Specialized Care</h4>
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-700 font-bold">Single Sitting RCT</span>
+                            <span class="text-slate-400 font-bold text-sm">from ₹3,500</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-700 font-bold">Wisdom Tooth Surgery</span>
+                            <span class="text-slate-400 font-bold text-sm">from ₹4,500</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-700 font-bold">Zirconia Crowns</span>
+                            <span class="text-slate-400 font-bold text-sm">from ₹7,500</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-slate-700 font-bold">Teeth Whitening</span>
+                            <span class="text-slate-400 font-bold text-sm">from ₹6,000</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="bg-white p-8 md:p-12 rounded-[3.5rem] shadow-[0_30px_60px_-15px_rgba(197,160,89,0.15)] border border-slate-100">
-            <div id="booking-form-wrapper">
-                <h3 class="text-2xl font-bold mb-8 uppercase text-center tracking-tight text-slate-800">Priority <span class="text-premium">Appointment</span></h3>
-                <form id="clinic-booking-form" class="space-y-4">
-                    <input type="text" name="firstName" placeholder="FULL NAME" required class="w-full bg-slate-50 border-slate-200 rounded-2xl px-6 py-4 text-xs font-bold uppercase tracking-widest focus:ring-2 focus:ring-premium outline-none transition-all">
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <input type="tel" name="phone" placeholder="PHONE" required class="w-full bg-slate-50 border-slate-200 rounded-2xl px-6 py-4 text-xs font-bold uppercase outline-none focus:ring-2 focus:ring-premium transition-all">
-                        <select id="service-select" name="service" required class="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 text-xs font-bold uppercase">
-                            <option value="">TREATMENT</option>
-                            <option value="DENTAL">Dental Care</option>
-                            <option value="SKIN">Skin Aesthetics</option>
-                            <option value="HAIR">Hair Restoration</option>
-                        </select>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <select id="doctor-date" name="selected_date" disabled required class="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 text-xs font-bold uppercase">
-                            <option value="">CHOOSE DATE</option>
-                        </select>
-                        <select id="doctor-time" name="selected_time" disabled required class="w-full bg-slate-50 border-none rounded-2xl px-6 py-4 text-xs font-bold uppercase">
-                            <option value="">SELECT TIME</option>
-                        </select>
-                    </div>
-                    
-                    <button type="submit" id="submit-btn" class="w-full bg-slate-900 text-white font-black py-5 rounded-2xl hover:bg-premium transition-all duration-300 uppercase text-[10px] tracking-[0.3em] shadow-lg mt-4 text-white">
-                        Confirm My Slot
-                    </button>
-                </form>
-            </div>
+        <p class="text-center text-slate-400 text-[10px] mt-12 uppercase font-bold tracking-[0.2em]">
+            *Final prices vary based on the complexity of the case and material chosen.
+        </p>
+    </div>
+</section>
 
-            <div id="thank-you-page" class="hidden text-center py-10 text-slate-800">
-                <div class="w-20 h-20 bg-premium rounded-full flex items-center justify-center text-white text-4xl mx-auto mb-6 shadow-xl">
-                    <i class="fas fa-check"></i>
+<section id="booking" class="py-24 bg-blue-50">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+            <h2 class="text-5xl font-black uppercase italic leading-tight mb-8">Ready for a <br><span class="text-premium">Better Experience?</span></h2>
+            <div class="space-y-8">
+                <div class="flex items-start gap-6">
+                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-premium text-2xl shrink-0"><i class="fas fa-map-marked-alt"></i></div>
+                    <div>
+                        <h5 class="font-bold text-lg">Visit the Clinic</h5>
+                        <p class="text-slate-500 text-sm">Deshmukh Bhavan, Syndicate, Kalyan West - 421301</p>
+                    </div>
                 </div>
-                <h3 class="text-2xl font-black uppercase">Booking Sent</h3>
-                <p class="text-slate-400 mt-2 text-[10px] uppercase tracking-widest font-bold">We will WhatsApp you shortly.</p>
+                <div class="flex items-start gap-6">
+                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center text-premium text-2xl shrink-0"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <h5 class="font-bold text-lg">Operating Hours</h5>
+                        <p class="text-slate-500 text-sm">Mon–Sat: 10:00 AM — 09:00 PM</p>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="bg-white p-10 rounded-[3rem] shadow-2xl shadow-blue-200/50 border border-white">
+            <form id="clinic-form" class="space-y-5">
+                <h3 class="text-xl font-bold uppercase tracking-widest text-center mb-8">Priority Booking</h3>
+                <input type="text" placeholder="Patient Full Name" required class="w-full bg-slate-50 border-0 rounded-2xl px-6 py-4 text-xs font-bold uppercase tracking-widest outline-none focus:ring-2 focus:ring-premium">
+                <input type="tel" placeholder="Mobile Number" required class="w-full bg-slate-50 border-0 rounded-2xl px-6 py-4 text-xs font-bold uppercase tracking-widest outline-none focus:ring-2 focus:ring-premium">
+                <select class="w-full bg-slate-50 border-0 rounded-2xl px-6 py-4 text-xs font-bold uppercase tracking-widest outline-none">
+                    <option>Select Concern</option>
+                    <option>Tooth Pain / RCT</option>
+                    <option>Wisdom Tooth Extraction</option>
+                    <option>Cleaning & Whitening</option>
+                </select>
+                <button type="submit" class="w-full bg-premium text-white py-5 rounded-2xl font-black text-[11px] uppercase tracking-[0.3em] shadow-xl hover:bg-slate-900 transition-all">Submit Appointment Request</button>
+            </form>
         </div>
     </div>
 </section>
 
-<footer class="bg-slate-900 text-white pt-24 pb-12 text-center rounded-t-[4rem]">
-    <div class="max-w-4xl mx-auto px-6">
-        <img src="https://raw.githubusercontent.com/AnujAhinave/mster-repo-/main/SAN.png" class="w-16 h-16 object-contain mx-auto mb-6">
-        <h3 class="text-2xl font-bold mb-4 uppercase tracking-tighter text-white">Shanklesha <span class="text-premium">Clinic</span></h3>
-        <p class="text-slate-500 text-xs mb-10 uppercase tracking-[0.3em]">Excellence • Safety • Aesthetics</p>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 text-left border-y border-white/5 py-10">
-            <div class="text-center">
-                <p class="text-premium text-[10px] font-bold uppercase tracking-widest mb-2">Visit Us</p>
-                <p class="text-sm text-slate-300">Punyodaya Skylounge, Near Raja Hotel,<br>Ahilyabai Chowk, Kalyan West — 421301</p>
+<footer class="bg-slate-900 text-white pt-24 pb-12 rounded-t-[4rem] relative overflow-hidden">
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-64 bg-blue-600/10 blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-16 mb-20">
+            
+            <div class="col-span-1 lg:col-span-1 text-center lg:text-left">
+                <div class="w-14 h-14 bg-premium rounded-2xl flex items-center justify-center text-white shadow-xl shadow-blue-900/50 mb-6 mx-auto lg:mx-0">
+                    <i class="fas fa-tooth text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-black uppercase tracking-tighter mb-4">Kalyan <span class="text-premium">Dental</span></h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Providing world-class oral healthcare with 22+ years of clinical mastery. Kalyan's most trusted name in painless dentistry since 2004.
+                </p>
+                <div class="flex justify-center lg:justify-start gap-4">
+                    <a href="https://wa.me/917208017597" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-green-500 hover:border-green-500 transition-all duration-300">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-500 hover:border-blue-500 transition-all duration-300">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://maps.app.goo.gl/..." target="_blank" class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-red-500 hover:border-red-500 transition-all duration-300">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                </div>
             </div>
-            <div class="text-center">
-                <p class="text-premium text-[10px] font-bold uppercase tracking-widest mb-2">Hours</p>
-                <p class="text-sm text-slate-300">Mon–Sun: 11:00 AM — 09:00 PM</p>
+
+            
+
+            <div class="text-center lg:text-left">
+                <h4 class="text-xs font-black uppercase tracking-[0.3em] text-premium mb-8">Get In Touch</h4>
+                <div class="space-y-6">
+                    <div class="flex items-center justify-center lg:justify-start gap-4 group">
+                        <i class="fas fa-phone-alt text-slate-500 group-hover:text-premium transition"></i>
+                        <span class="text-slate-300 font-bold">+91 72080 17597</span>
+                    </div>
+                    <div class="flex items-start justify-center lg:justify-start gap-4 group">
+                        <i class="fas fa-map-marked-alt text-slate-500 mt-1 group-hover:text-premium transition"></i>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Deshmukh Bhavan, Syndicate,<br>
+                            Kalyan-Murbad Road, <br>
+                            Kalyan West — 421301
+                        </p>
+                    </div>
+                </div>
             </div>
+
+            <div class="text-center lg:text-left">
+                <h4 class="text-xs font-black uppercase tracking-[0.3em] text-premium mb-8">Clinic Hours</h4>
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-6">
+                    <div class="flex justify-between text-sm mb-3">
+                        <span class="text-slate-500">Mon — Sat</span>
+                        <span class="text-slate-200 font-bold">10 AM - 9 PM</span>
+                    </div>
+                    <div class="flex justify-between text-sm pb-3 border-b border-white/5">
+                        <span class="text-slate-500">Sunday</span>
+                        <span class="text-red-400 font-bold uppercase text-[10px]">Closed</span>
+                    </div>
+                    <p class="text-[10px] text-slate-500 mt-4 leading-relaxed font-bold uppercase tracking-widest">
+                        *Emergency cases prioritised
+                    </p>
+                </div>
+            </div>
+
         </div>
-        
-        <p class="text-[9px] text-slate-600 font-bold uppercase tracking-[0.4em]">© 2026 Shanklesha Clinic | Designed for Excellence</p>
+
+        <div class="border-t border-white/5 pt-12 text-center">
+            <p class="text-[10px] font-bold text-slate-600 uppercase tracking-[0.5em] mb-4">
+                Clinical Excellence Since 2004
+            </p>
+            <p class="text-[9px] text-slate-700 font-black uppercase tracking-[0.2em]">
+                © 2026 Kalyan Dental Clinic | Designed for Excellence
+                
+            </p>
+        </div>
     </div>
 </footer>
 
-<script>
-    const API_URL = "https://script.google.com/macros/s/AKfycby87Kh9jGLi3-2kctMIWhF1eGxLZHQAN0jIftq9SzrCysU5KuwKbMISs7VuWjvIvH9BTA/exec";
-
-    const serviceSelect = document.getElementById('service-select');
-    const dateSelect  = document.getElementById('doctor-date');
-    const timeSelect  = document.getElementById('doctor-time');
-    const bookingForm = document.getElementById('clinic-booking-form');
-    const submitBtn   = document.getElementById('submit-btn');
-
-    let allAvailableSlots = []; 
-
-    async function loadSchedule() {
-        try {
-            const response = await fetch(API_URL + "?fetch=true");
-            const data = await response.json();
-            allAvailableSlots = data.slots || [];
-        } catch (e) { console.error("API Error", e); }
-    }
-
-    serviceSelect.onchange = () => {
-        if (!serviceSelect.value) return;
-        dateSelect.innerHTML = '<option value="">LOADING...</option>';
-        const uniqueDates = [...new Set(allAvailableSlots.filter(s => s.status.toLowerCase() === 'available').map(s => s.date))];
-        if (uniqueDates.length > 0) {
-            dateSelect.innerHTML = '<option value="">CHOOSE DATE</option>';
-            uniqueDates.forEach(d => {
-                let opt = document.createElement('option'); opt.value = d; opt.textContent = d;
-                dateSelect.appendChild(opt);
-            });
-            dateSelect.disabled = false;
-        }
-    };
-
-    dateSelect.onchange = () => {
-        const selectedDate = dateSelect.value;
-        timeSelect.innerHTML = '<option value="">SELECT TIME</option>';
-        const slots = allAvailableSlots.filter(s => s.date === selectedDate);
-        if (slots.length > 0) {
-            slots.forEach(s => {
-                let opt = document.createElement('option');
-                opt.value = s.time; opt.textContent = s.time;
-                opt.disabled = s.status === 'booked';
-                timeSelect.appendChild(opt);
-            });
-            timeSelect.disabled = false;
-        }
-    };
-
-    bookingForm.onsubmit = async (e) => {
-        e.preventDefault();
-        submitBtn.disabled = true;
-        submitBtn.textContent = "SENDING...";
-        const fd = new FormData(bookingForm);
-        const payload = {
-            action: "newBooking",
-            firstName: fd.get("firstName"),
-            phone: fd.get("phone"),
-            service: fd.get("service"),
-            date: fd.get("selected_date"),
-            time: fd.get("selected_time")
-        };
-        try {
-            await fetch(API_URL, { method: 'POST', mode: 'no-cors', body: JSON.stringify(payload) });
-            document.getElementById('booking-form-wrapper').classList.add('hidden');
-            document.getElementById('thank-you-page').classList.remove('hidden');
-        } catch (err) { alert("Sent! Check WhatsApp."); }
-    };
-
-    loadSchedule();
-</script>
 </body>
 </html>
